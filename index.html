@@ -10,7 +10,7 @@
             margin: 40px;
             line-height: 1.6;
             max-width: 800px;
-            margin-left: auto;
+            margin-left: 220px; /* Adjusted for sidebar width */
             margin-right: auto;
         }
         h1 {
@@ -36,9 +36,39 @@
             list-style-type: disc;
             margin-left: 20px;
         }
+        /* Sidebar styles */
+        .sidebar {
+            position: fixed;
+            top: 40px;
+            left: 20px;
+            width: 160px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <a href="#about">About</a>
+        <a href="#cfp">CFP</a>
+        <a href="#program">Program</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#reviewer-guidelines">Reviewer Guidelines</a>
+    </div>
+
     <h1>Lost In Translation: Challenges and Opportunities for Principled Machine Learning and Best Practices in Industry</h1>
     <p><strong>Date:</strong> 7 December 2025</p>
     <p>Large scale interactive systems such as large language models and recommender systems are arguably the largest living body of machine learning and so it is a very natural testbed of all the principles and practices that have been developed in academia. This workshop asks the following questions: which of these academic ideas survive in a production setting?, which are lost in translation?, and what additional ideas are needed in order to have a whole of system understanding of best practices for machine learning in production?</p>
